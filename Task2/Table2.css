@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.price-list {
+    width: 70%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.price-list th, .price-list td {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: left;
+}
+
+.price-list th {
+    background-color: #91c0f3;
+    font-size: 18px;
+}
+
+.price-list .odd {
+    background-color: #f9f9f9;
+}
+
+.price-list .even {
+    background-color: #e0e0e0;
+}
+
+.price-list td.price {
+    text-align: right;
+}

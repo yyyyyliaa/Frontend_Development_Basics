@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Table3.css">
+    <title>Кокарева Юлия гр.2151</title>
+</head>
+<body>
+<div class="container">
+    <h1>Форма заказа билетов в театр</h1>
+    <form>
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+
+        <label for="email">Электронная почта:</label>
+        <input id="email" type="email" placeholder="Введите адрес вашей электронной почты" >
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+
+        <br>
+
+        <table>
+            <thead>
+            <tr>
+                <h3 style="text-align: left; color: darkred"><label>Тип билета:</label></h3>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th style="text-align: left"><label for="bal">Балкон</label></th>
+                <th style="text-align: left"><input type="radio" id="bal" name="type" value="bal"></th>
+            </tr>
+            <tr>
+                <th style="text-align: left"><label for="par">Партер</label></th>
+                <th style="text-align: left"><input type="radio" id="par" name="type" value="par"></th>
+            </tr>
+            <tr>
+                <th style="text-align: left"><label for="amf">Амфитеатр</label></th>
+                <th style="text-align: left"><input type="radio" id="amf" name="type" value="amf"></th>
+            </tr>
+            <tr>
+                <th style="text-align: left"><label for="bel">Бельэтаж</label></th>
+                <th style="text-align: left"><input type="radio" id="bel" name="type" value="bel"></th>
+            </tr>
+            </tbody>
+
+        </table>
+
+        <br>
+
+        <table>
+            <thead>
+            <tr>
+                <h3 style="text-align: left; color: darkred"><label>Дополнительные услуги:</label></h3>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th style="text-align: left"> <label for="parking">Парковка</label></th>
+                <th style="text-align: left"><input type="checkbox" id="parking" name="extras" value="parking"></th>
+            </tr>
+            <tr>
+                <th style="text-align: left"><label for="dinner">Ужин</label></th>
+                <th style="text-align: left"><input type="checkbox" id="dinner" name="extras" value="dinner"></th>
+            </tr>
+            </tbody>
+
+        </table>
+
+        <br>
+        <br>
+
+        <label for="showDate">Дата представления:</label>
+        <input type="date" id="showDate" name="showDate" required>
+
+        <button type="submit">Заказать билеты</button>
+    </form>
+</div>
+</body>
+</html>
