@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice</title>
+
+    <script src="my_script.js"></script>
+
+    <script>
+        alert("У меня появились навыки создания веб-страниц с использованием HTML и CSS");
+    </script>
+
+    <script>
+        let groupNumber = 2151;
+        let message = "Group Number: " + groupNumber.toString();
+        console.log(message);
+
+        let course = 3;
+        if (course === 1) {
+            alert("До окончания университета 4 года");
+        } else if (course === 2) {
+            alert("До окончания университета 3 года");
+        } else if (course === 3) {
+            alert("До окончания университета 2 года");
+        } else if (course === 4) {
+            alert("До окончания университета 1 года");
+        }
+
+        let strNumber = "888";
+        let convertedNumber = +strNumber;
+        console.log("Converted Number: " + convertedNumber);
+    </script>
+
+    <script>
+        // Function Declaration
+        function determineTravelTimeDeclaration(avenueLength, walkingSpeed) {
+            let timeInHours = avenueLength / walkingSpeed;
+            let timeInMinutes = Math.floor(timeInHours * 60);
+            console.log("Function Declaration: Вы сможете пройти Невский проспект за " + timeInMinutes.toFixed(0) + " минут.");
+        }
+
+        // Function Expression
+        let determineTravelTimeExpression = function (avenueLength, walkingSpeed) {
+            let timeInHours = avenueLength / walkingSpeed;
+            let timeInMinutes = Math.floor(timeInHours * 60);
+            console.log("Function Expression: Вы сможете пройти Невский проспект за " + timeInMinutes.toFixed(0) + " минут.");
+        };
+
+        // Arrow Function
+        let determineTravelTimeArrow = (avenueLength, walkingSpeed) => {
+            let timeInHours = avenueLength / walkingSpeed;
+            let timeInMinutes = Math.floor(timeInHours * 60);
+            console.log("Arrow Function: Вы сможете пройти Невский проспект за " + timeInMinutes.toFixed(0) + " минут.");
+        };
+
+        determineTravelTimeDeclaration(4.5, 1);
+        determineTravelTimeExpression(4.5, 1);
+        determineTravelTimeArrow(4.5, 1);
+    </script>
+
+</head>
+<body>
+<p>Цель работы – приобретение навыков создания для HTML-документа внешних
+    и внутренних скриптов на JavaScript, формирование практических навыков
+    использования операторов и создания функций.</p>
+</body>
+</html>
